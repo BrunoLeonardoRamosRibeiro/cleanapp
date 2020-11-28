@@ -1,4 +1,5 @@
-import 'package:cleanapp/app/components/custom_switch_widget.dart';
+import 'package:cleanapp/app/app_controller.dart';
+import 'package:cleanapp/app/pages/home/components/custom_switch_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,10 +12,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text('Home Page teste'),
       ),
-      body: Center(
-        child: CustomSwitchWidget(),
+      body: Column(
+        children: [
+          Center(
+            child: CustomSwitchWidget(),
+          ),
+          Text(AppController.instance.themeSwitch.value.toString()),
+        ],
       ),
     );
   }

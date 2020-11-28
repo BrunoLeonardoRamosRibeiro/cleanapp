@@ -1,6 +1,7 @@
-import 'package:cleanapp/app/controllers/app_controller.dart';
+import 'package:cleanapp/app/app_controller.dart';
 import 'package:cleanapp/app/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AppWidget extends StatelessWidget {
 
@@ -16,7 +17,7 @@ class AppWidget extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
             visualDensity: VisualDensity.adaptivePlatformDensity,
-            brightness: isDark?Brightness.dark : Brightness.light,
+            brightness: isDark ? Brightness.dark : Brightness.light,
           ),
           home: HomePage(),
         );
