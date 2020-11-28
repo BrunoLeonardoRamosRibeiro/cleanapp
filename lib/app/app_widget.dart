@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
     return ValueListenableBuilder<bool>(
       valueListenable: AppController.instance.themeSwitch,
       builder: (context, isDark, child)  {
-        return GetMaterialApp(
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
